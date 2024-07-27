@@ -1,0 +1,268 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', Times, serif;
+    font-size: 16px;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/*GENERAL*/
+.container{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.d_flex{
+    display: flex;
+}
+.d_col_flex{
+    display: flex;
+    flex-direction: column;
+}
+.bold{
+    font-weight: bold;
+}
+.d_lg_none{
+    display: none;
+}
+.w_100{
+    width: 100%;
+}
+.text_white{
+    color: #fff;
+}
+/* HEADER */
+.navbar{
+    position: relative;
+    height: 60px;
+    background-color: #131921 ;
+}
+nav.container{
+    position: relative;
+    height: 100%;
+}
+.menu_icon{
+    font-size: 2em;
+    color: #fff;
+    margin-top: 10px;
+}
+.navbar_brand{
+    align-items: center;
+}
+.navbar_brand img{
+   height: 2em;
+   margin-top: 15px;
+}
+.navbar_brand span{
+    margin-top: 5px;
+}
+.nav_item{
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0.2em 0.5em;
+}
+.nav_location{
+    align-items: center;
+}
+.nav_location span{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+.nav_location span p{
+    font-size: 0.75em;
+    margin: 0;
+    font-weight: 500;
+    color: #cccccc;
+    
+}
+.nav_location span h6{
+    font-size: 0.875em;
+}
+.navbar_nav{
+    position: absolute;
+    width: 87%;
+    display: none;
+    align-items: center;
+    padding: 0;
+}
+.navbar_nav2{
+    margin-right: 0;
+    width: 100%;
+}
+li.form_li{
+    position: relative;
+    width: 45%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0;
+}
+.search_form{
+    background-color: #F6BE75;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 0;
+}
+.search_form *{
+    height: 100%;
+    margin-right: -5px;
+}
+.search_form select{
+    width: 10%;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #cccccc;
+}
+.search_form input{
+    width: 80%;
+    font-size: 1em;
+}
+.search_form button{
+    width: 10%;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    background-color: #F6BE75;
+}
+.nav_item_span_top{
+    font-size: 0.75em;
+}
+.nav_item_span_bottom{
+    font-size: 0.875em;
+}
+.lang_btn{
+    width: 50px;
+    height: 50px;
+    margin-left: 1em;
+    background-color: #131921 ;
+    outline: none;
+    border: none;
+    color: white;
+}
+.navbar_nav2 .nav_item{
+    float: right;
+    margin: 1em 0em;
+}
+.md_navbar_container{
+    height: 40px;
+    background-color: #131921;
+}
+.md_navbar{
+    list-style-type: none;
+    padding: 0;
+}
+.md_navbar li{
+    font-size: 1em;
+    float: left;
+    margin-right: 10px;
+}
+.md_navbar_location{
+    background-color: #464f5b;
+}
+.lg_navbar_bottom{
+    background-color: #464f5b;
+    height: 40px;
+}
+.menu_icon_div{
+    display: flex;
+    width: 5%;
+    height: 100%;
+    padding: 0.5em;
+    align-items: center;
+}
+.menu_icon_div i{
+    font-size: 2em;
+    padding: 0;
+    line-height: 1em;
+}
+.lg_navbar_bottom .nav_item{
+    font-size: 0.8em;
+}
+.navbar_bottom_ul{
+    align-items: center;
+}
+.navbar_bottom_ul select{
+    background-color: #464f5b;
+    color: #fff;
+    border: none;
+}
+@media (min-width: 1025px) {
+    /* Styles for HD screens */
+    .navbar_nav{
+        display: flex;
+    }
+  }
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for standard screens */
+    body{
+        font-size: 12px;
+        }
+    .d_lg_none{
+    display: block;
+    }
+    nav.navbar{
+        height: 130px;
+    }
+    .d_md_none{
+        display: none;
+    }
+    .search_form input{
+        width: 95%;
+    }
+    .search_form button{
+        width: 5%;
+    }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+    /* Styles for tablets */
+    body{
+        font-size: 12px;
+    }
+    .d_lg_none{
+        display: block;
+    }
+    nav.navbar{
+        height: 130px;
+    }
+    .d_md_none{
+        display: none;
+    }
+    .search_form input{
+        width: 95%;
+    }
+    .search_form button{
+        width: 5%;
+    }
+}
+@media (max-width: 600px) {
+    /* Styles for smartphones */
+    body{
+        font-size: 12px;
+    }
+    .menu_icon{
+        display: block;
+    }
+    .d_lg_none{
+        display: block;
+    }
+    nav.navbar{
+        height: 130px;
+    }
+    .d_md_none{
+        display: none;
+    }
+    .search_form input{
+        width: 95%;
+    }
+    .search_form button{
+        width: 5%;
+    }
+}
